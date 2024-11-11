@@ -1,0 +1,13 @@
+name: Curl Request
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  curl_request:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: curl
+      run: 'curl -v https://actions.ctf.cert.unlp.edu.ar/'
+
